@@ -1,0 +1,460 @@
+
+.none{ display:none;}
+.dropdown{color: #444444;font-size:17px;}
+/*#calender_section{ width:700px; margin:30px auto 0;}*/
+#calender_section h2{ background-color:#efefef; color:#444444; font-size:17px; text-align:center; line-height:40px;}
+#calender_section h2 a{ color:#F58220; float:none;}
+#calender_section_top{ width:100%; float:left; /*margin-top:20px;*/}
+#calender_section_top ul{padding:0; list-style-type:none;}
+#calender_section_top ul li{ float:left; display:block; width:14%; border-right:1px solid #fff;  text-align:center; font-size:14px; min-height:0; background:none; box-shadow:none; margin:0; padding:0;}
+#calender_section_bot{ width:100%; margin-top:10px; float:left; border-left:1px solid #ccc; margin-bottom: 20px;}
+#calender_section_bot ul{ margin:0; padding:0; list-style-type:none;}
+#calender_section_bot ul li{ float:left; width:14%; height:50px;
+ text-align:center; border-top:1px solid #ccc; border-bottom:1px solid #ccc;
+  border-right:1px solid #ccc; min-height:0; background:none; 
+  box-shadow:none; margin:-1px 0 0; padding:0; position:relative;
+  border-radius: 5px;
+  transition: transform 1s;
+
+}
+
+
+#calender_section_bot ul li span{
+    text-align: center;
+    line-height: 50px;}
+
+.light_sky{ background-color:#B9FFFF !important;}
+
+/*========== Hover Popup ===============*/
+.date_cell { cursor: pointer; cursor: hand; }
+
+.date_popup_wrap {
+  position: absolute;
+  width: 143px;
+  height: 115px;
+  z-index: 9999;
+  top: -115px;
+  left:-55px;
+  background: transparent url(add-new-event.png) no-repeat top left;
+  color: #666 !important;
+}
+.events_window {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 133px;
+  height: 115px;
+  margin-top: 28px;
+  margin-left: 25px;
+}
+.event_wrap {
+  margin-bottom: 10px; padding-bottom: 10px;
+  border-bottom: solid 1px #E4E4E7;
+  font-size: 12px;
+  padding: 3px;
+}
+.date_window {
+  margin-top:20px;
+  margin-bottom: 2px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left:9px;
+  margin-right:14px
+}
+.popup_event {
+  margin-bottom: 2px;
+  padding: 2px;
+  font-size: 16px;
+  width:100%;
+}
+
+.popup_event a {color: #000000 !important;}
+.packeg_box a {color: #F58220;float: right;}
+a:hover {color: #181919;text-decoration: underline;}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+#calender_section{ width:100%;}
+#calender_section_top ul li{ width:14.2%;}
+#calender_section_bot ul li{ width:14.2%;}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+#calender_section{ width:100%;}
+#calender_section_top ul li{ width:14%; font-size:11px;}
+#calender_section_bot ul li{ width:14%;}
+#calender_section_bot{ width:100%;}
+#calender_section_bot ul li{ height:50px;}
+}
+
+@media only screen and (min-width: 768px) {
+/*#calender_section{ width:530px;}*/
+#calender_section_top ul li{ width:28px; font-size:12px;}
+#calender_section_bot ul li{ width:28px;}
+/*#calender_section_bot{ width:525px;}*/
+#calender_section_bot ul li{ height:50px;}
+}
+
+
+@media only screen and (min-width: 793px) {
+  #calender_section_top ul li{ width:32px; font-size:12px;}
+  #calender_section_bot ul li{ width:32px;}
+  #calender_section_bot ul li{ height:50px;}
+}
+@media only screen and (min-width: 900px) {
+  #calender_section_top ul li{ width:37px; font-size:12px;}
+  #calender_section_bot ul li{ width:37px;}
+  #calender_section_bot ul li{ height:50px;}
+}
+
+
+@media only screen and (min-width: 992px) {
+  #calender_section_top ul li{ width:28px; font-size:12px;}
+  #calender_section_bot ul li{ width:28px;}
+  #calender_section_bot ul li{ height:50px;}
+}
+
+.Square_box_yellow_halfday {
+    height: 20px;
+    width: 20px;
+    background: #e89113;
+    display: block;
+}
+@media only screen and (min-width: 1000px) {
+  #calender_section_top ul li{ width:28px; font-size:12px;}
+  #calender_section_bot ul li{ width:28px;}
+  #calender_section_bot ul li{ height:50px;}
+}
+  
+/*-------------------- ADD BY RAJESH 29 SEP 2021 START HERE --------------*/
+@media only screen and (min-width: 1024px) {
+/*  #calender_section_top ul li{width:32px;font-size: 12px;}
+  #calender_section_bot ul li{width: 34px;}*/
+   #calender_section_top ul li{width:39px;font-size: 12px;} /*-- ADDED ON 29 SEP 2021*/
+  #calender_section_bot ul li{width: 39px;} /*-- ADDED ON 29 SEP 2021*/
+  #calender_section_bot ul li{ height:50px;}
+}
+/*-------------------- ADD BY RAJESH 29 SEP 2021 END HERE --------------*/
+
+@media only screen and (min-width: 1068px) {
+  #calender_section_top ul li{width:36px;font-size: 12px;}
+  #calender_section_bot ul li{width: 36px;}
+  #calender_section_bot ul li{ height:50px;}
+}
+
+
+@media only screen and (min-width: 1120px) {
+  #calender_section_top ul li{ width:36px; font-size:12px;}
+  #calender_section_bot ul li{ width:36px;}
+  #calender_section_bot ul li{ height:50px;}
+}
+@media only screen and (min-width: 1200px) {
+  #calender_section_top ul li{ width:14%; font-size:12px;}
+  #calender_section_bot ul li{ width:14%;}
+  #calender_section_bot ul li{ height:50px;}
+}
+.Square_box_green {
+    height: 15px;
+    width: 20px;
+    background: #9bd1ad !important;
+  color: #fff !important;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+   
+}
+.Square_box_sky {
+    height: 15px;
+    width: 20px;
+    background: #5bc0de !important;
+  color: #fff !important;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+.Square_box_red {
+    height: 15px;
+    width: 20px;
+     background: #fc558d !important;
+    color: #fff !important;
+   display: inline-block;
+   position: relative;
+    top: 2px;
+   
+
+}
+.Square_box_yellow {
+    height: 15px;
+    width: 20px;
+    background: #faef75 !important;
+    color: #000 !important;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    
+
+}
+.Square_box_orange {
+    height: 15px;
+    width: 20px;
+    background: #e2c394;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+
+}
+.Square_box_purple {
+    height: 15px;
+    width: 20px;
+    background: rgba(209,64,79, 1);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+   
+
+}
+.TxtGreenClr {
+    color: #5BAA45 !important;
+}
+
+.date_cell:hover {
+  /*transform: translateX(40px);*/
+  /*transform: rotate(-40deg);*/
+    transform: scale(1.4) rotateZ(-5deg);
+    z-index: 99;
+  /*transform: rotate(60deg) scale(-1);*/}
+  .date_cell .Bg-gray:hover{
+  background: rgba(116, 116, 116, 1) !important;
+        color: white;
+}
+
+.Square_box_lwph {
+    height: 20px;
+    width: 20px;
+    background: #483C32;
+    display: block;
+}
+
+.Bg-green{
+  background: #9bd1ad !important;
+  color: #fff !important;
+}
+.Bg-yellow{
+  background: #faef75 !important;
+  color: #000 !important;
+}
+.Bg-red{
+  background: #fc558d !important;
+  color: #fff !important;
+}
+.Bg-orange{
+  background: #e2c394 !important;
+  color: #fff !important;
+}
+.Bg-sky{
+  background: #5bc0de !important;
+  color: #fff !important;
+}
+/*.vl{
+  position: relative !important;
+    left: 30px !important;
+}*/
+
+#calender_section_bot ul li{
+  z-index: 99 !important;
+}
+
+#calender_section .col-md-12{
+  padding: 0px;
+}
+
+.prestnt p{
+  font-size: 13px;
+}
+
+/*-------------------- ADDED ON 30 DEC 2021 START HERE ---------------*/
+
+
+.closedtaskcls .fc-event-title-container:after{
+   /* width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    left: -18% !important;
+    background: #28a745;
+    border-radius: 50%;
+    top: 0;
+    z-index: 99;*/
+
+    width: 7px;
+    height: 7px;
+    content: "";
+    position: absolute;
+    left: 2px !important;
+    background: #28a745;
+    border-radius: 50%;
+    top:6px;
+    z-index: 99;
+
+}
+
+
+.progresstest .fc-event-title-container:after{
+   /* width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    left: -18% !important;
+    background: #FC7BAC;
+    border-radius: 50%;
+    top: 0;
+    z-index: 99;*/
+
+     width: 7px;
+    height: 7px;
+    content: "";
+    position: absolute;
+    left: 2px !important;
+    background: #FC7BAC;
+    border-radius: 50%;
+    top:6px;
+    z-index: 99;
+}
+
+
+.openandoverdutdate .fc-event-title-container:after{
+   /* width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    left: -18% !important;
+    background: #FF5147;
+    border-radius: 50%;
+    top: 0;
+    z-index: 99;*/
+
+     width: 7px;
+    height: 7px;
+    content: "";
+    position: absolute;
+    left: 2px !important;
+    background: #FF5147;
+    border-radius: 50%;
+    top: 6px;
+    z-index: 99;
+}
+
+
+
+.todaydue .fc-event-title-container:after{
+  /*  width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    left: -18% !important;
+    background: #800080;
+    border-radius: 50%;
+    top: 0;
+    z-index: 99;*/
+     width: 7px;
+    height: 7px;
+    content: "";
+    position: absolute;
+    left: 2px !important;
+    background: #800080;
+    border-radius: 50%;
+    top:6px;
+    z-index: 99;
+}
+.closedafterdue .fc-event-title-container:after{
+   /* width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    left: -18% !important;
+    background: #FFAD46;
+    border-radius: 50%;
+    top: 0;
+    z-index: 99;*/
+     width: 7px;
+    height: 7px;
+    content: "";
+    position: absolute;
+    left: 2px !important;
+    background: #FFAD46;
+    border-radius: 50%;
+    top:6px;
+    z-index: 99;
+}
+
+  /*-------------------- ADDED ON 30 DEC 2021 END HERE ---------------*/
+
+  
+/*----------------- ADD BY RAJESH 5 DEC 2021 START HERE--------------*/
+
+@media only screen and (min-width:1068px) and (max-width:1154px) 
+{   
+      #calender_section_top ul li {
+        width: 42px;
+        font-size: 12px;
+      }
+      #calender_section_bot ul li
+      {
+            width: 42px;
+      }
+      .prestnt p
+      {
+          font-size:16px !important;
+      }
+
+ }
+
+
+ @media only screen and (min-width:1155px) and (max-width:1184px)
+  {
+      #calender_section_top ul li {
+        width: 46px;
+        font-size: 12px;
+      }
+      #calender_section_bot ul li
+      {
+          width: 46px;
+      }
+      .prestnt p
+      {
+          font-size:16px !important;
+      }
+ }
+
+
+
+
+@media only screen and (min-width:1185px) and (max-width: 1199px) {
+        #calender_section_bot ul li
+        {
+            width: 46px;
+        }
+        #calender_section_top ul li
+        {
+           width: 46px;
+           font-size: 12px;
+        }
+        .prestnt p
+        {
+            font-size:16px !important;
+        }
+ }
+
+ /*----------------- ADD BY RAJESH 5 DEC 2021 END HERE--------------*/
+
+
+ .Square_box_leavepurple {
+  height: 15px;
+  width: 20px;
+  background: #BB3EF7;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+
+}
+.Bg-lpurple{
+  background: #BB3EF7 !important;
+  color: #fff !important;
+}

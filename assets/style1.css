@@ -1,0 +1,83 @@
+.fa{
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1;
+}
+.pre{
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #eeeef0;
+}
+.lang{
+    position: relative;
+    height: inherit!important;
+    padding: 3px 8px;
+    border: 1px;
+}
+.profile-detail img{
+    width: 40px;
+    height: 40px;
+}
+.rounded-circle{
+    border-radius: 50%!important;
+}
+.text-white{
+    color: #eeeef0;
+    text-align: center;
+}
+.arrow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%!important;
+}
+.nav-link{
+    height: 8px;
+    width: 8px;
+    text-align: center;
+}
+.bar{
+    height: 40px;
+    width: 100%;
+    background-color: #dd6bb7;
+    text-align: center;
+}
+.text-light{
+    color: #f8f9fa!important;
+}
+.eye img{
+    border-radius: 90%!important;
+}
+.band1 .dash-img{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.band1 .aemp{
+    text-align: center;
+    background-color: #e9edf0;
+    padding: 5px;
+
+}
+.tbl-border{
+    border: 1px solid #dee2e6;
+    width: 100%;
+}
+.fr{
+    width: 14px;
+    height: 14px;
+    background: red;
+    display: inline-block;
+    border-radius: 50%;
+}
+.fr5{
+    width: 14px;
+    height: 14px;
+    background: #28a745;
+    display: inline-block;
+    border-radius: 50%;
+}
+.text-light:hover, a.renewText:focus, a.renewText:hover{
+    color: #021c3b!important;
+}
